@@ -43,7 +43,7 @@ Given a set of training data points $(x_1, y_1)$, ..., $(x_m, y_m)$, you will fi
 
 For each training example $x^{(i)}$, the prediction $\hat{y}^{(i)}$ can be calculated as:
 
-\hat{y}^{(i)} &=  w x^{(i)} + b,\\
+$$\hat{y}^{(i)} &=  w x^{(i)} + b,\$$
 
 where $i = 1, \dots, m$.
 
