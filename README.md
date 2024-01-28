@@ -49,7 +49,7 @@ where $i = 1, \dots, m$.
 
 We can organise all training examples as a vector $X$ of size ($1 \times m$) and perform scalar multiplication of $X$ ($1 \times m$) by a scalar $w$, adding $b$, which will be broadcasted to a vector of size ($1 \times m$):
 
-\hat{Y} &=  w X + b,\\
+$$\hat{Y} =  w X + b,\$$
 
 This set of calculations is called **forward propagation**.
 
@@ -63,19 +63,19 @@ When our weights were just initialized with some random values, and no training 
 
 According to the gradient descent algorithm, you can calculate partial derivatives as:
 
-\begin{align}
+$$\begin{align}
 \frac{\partial \mathcal{L} }{ \partial w } &= 
 \frac{1}{m}\sum_{i=1}^{m} \left(\hat{y}^{(i)} - y^{(i)}\right)x^{(i)},\\
 \frac{\partial \mathcal{L} }{ \partial b } &= 
 \frac{1}{m}\sum_{i=1}^{m} \left(\hat{y}^{(i)} - y^{(i)}\right).
-\tag{5}\end{align}
+\tag{5}\end{align}\$$
 
 We can see how the additional division by $2$ in the equation $(4)$ helped to simplify the results of the partial derivatives. Then update the parameters iteratively using the expressions
 
-\begin{align}
+$$\begin{align}
 w &= w - \alpha \frac{\partial \mathcal{L} }{ \partial w },\\
 b &= b - \alpha \frac{\partial \mathcal{L} }{ \partial b },
-\tag{6}\end{align}
+\tag{6}\end{align}\$$
 
 where $\alpha$ is the learning rate. Then repeat the process until the cost function stops decreasing.
 
