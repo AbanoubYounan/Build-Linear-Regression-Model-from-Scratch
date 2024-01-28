@@ -43,17 +43,13 @@ Given a set of training data points $(x_1, y_1)$, ..., $(x_m, y_m)$, you will fi
 
 For each training example $x^{(i)}$, the prediction $\hat{y}^{(i)}$ can be calculated as:
 
-\begin{align}
 \hat{y}^{(i)} &=  w x^{(i)} + b,\\
-\tag{2}\end{align}
 
 where $i = 1, \dots, m$.
 
 We can organise all training examples as a vector $X$ of size ($1 \times m$) and perform scalar multiplication of $X$ ($1 \times m$) by a scalar $w$, adding $b$, which will be broadcasted to a vector of size ($1 \times m$):
 
-\begin{align}
 \hat{Y} &=  w X + b,\\
-\tag{3}\end{align}
 
 This set of calculations is called **forward propagation**.
 
